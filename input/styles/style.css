@@ -1,0 +1,35 @@
+body{
+	font-family: sans-serif;
+}
+main{
+	margin: 100px auto;
+	width: 500px;
+}
+.wrapper{
+	position: relative;	
+	width: 140px;
+}
+.wrapper input,
+.wrapper label{
+	width: 140px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px 0 10px 5px;
+	-webkit-transition: 0.4s ease-in-out;
+	-o-transition: 0.4s ease-in-out;
+	transition: 0.4s ease-in-out;
+}
+.wrapper label{
+	z-index: 2;
+}
+.wrapper i{
+	position: absolute;
+	z-index: 3;
+	cursor: pointer;
+	right: 0;
+	top: 10px;
+}
+i.closed{
+	display: none;
+}
