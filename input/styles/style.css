@@ -8,6 +8,11 @@ main{
 .wrapper{
 	position: relative;	
 	width: 140px;
+	height: 40px;
+	display: inline-block;
+}
+.wrapper:nth-child(even){
+	margin: 0 20px;
 }
 .wrapper input,
 .wrapper label{
@@ -20,8 +25,20 @@ main{
 	-o-transition: 0.4s ease-in-out;
 	transition: 0.4s ease-in-out;
 }
+.wrapper input{
+	border-radius: 5px;
+	border: 1px solid #E0E0E0;
+	line-height: 15px;
+}
+.wrapper input:focus{
+	-moz-box-shadow: inset 0px 0px 1px 0px #00E676;
+	-webkit-box-shadow: inset 0px 0px 1px 0px #00E676;
+	-o-box-shadow: inset 0px 0px 1px 0px #00E676;
+	box-shadow: inset 0px 0px 1px 0px #00E676;
+}
 .wrapper label{
 	z-index: 2;
+	font-size: 14px;
 }
 .wrapper i{
 	position: absolute;
@@ -32,4 +49,15 @@ main{
 }
 i.closed{
 	display: none;
+}
+input[type="submit"]{
+	background: none;
+	font-size: 14px;
+	padding: 10px 0;
+	transition: 0.3s ease-in-out;
+	cursor: pointer;
+}
+input[type="submit"]:hover{
+	background: #69F0AE;
+	transition: 0.3s ease-in-out;
 }
