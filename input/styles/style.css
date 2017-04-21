@@ -39,6 +39,7 @@ main{
 .wrapper label{
 	z-index: 2;
 	font-size: 14px;
+	font-weight: lighter;
 }
 .wrapper i{
 	position: absolute;
@@ -56,8 +57,13 @@ input[type="submit"]{
 	padding: 10px 0;
 	transition: 0.3s ease-in-out;
 	cursor: pointer;
+	font-weight: lighter;
 }
 input[type="submit"]:hover{
+	background: #69F0AE;
+	transition: 0.3s ease-in-out;
+}
+input[type="submit"]:focus{
 	background: #69F0AE;
 	transition: 0.3s ease-in-out;
 }
