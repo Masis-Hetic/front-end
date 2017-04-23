@@ -1,0 +1,56 @@
+div.wrapper{
+    width: 200px;
+    height: 200px;
+    margin: 300px auto;
+}
+img{
+    display: block;
+    width: 100%;
+}
+
+div.small-gear{
+    animation-duration: 10s;
+    animation-name: rotate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    width: 70px;
+}
+
+@keyframes rotate{
+    from{
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+div.big-gear{
+    animation-duration: 10s;
+    animation-name: rotatebis;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    width: 100px;
+    margin-left: 3px;
+    margin-top: -3px;
+}
+
+@keyframes rotatebis{
+    from {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+    to {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
