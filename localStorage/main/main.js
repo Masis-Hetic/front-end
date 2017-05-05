@@ -1,5 +1,8 @@
-var activ = document.querySelector('div.activ');
+var activ = document.querySelector('main div:nth-of-type(2)');
 var themes = document.querySelector('div.themes');
+var body = document.querySelector('body');
+var btn = document.querySelectorAll('li');
+var p = document.querySelector('main div:nth-of-type(2)>p');
 
 activ.addEventListener('click', function(){
     if(themes.classList.contains('themes')){
@@ -9,8 +12,11 @@ activ.addEventListener('click', function(){
     }
 });
 
-var body = document.querySelector('body');
-var btn = document.querySelectorAll('li');
+p.addEventListener('click', function(){
+    activ.classList.toggle('activ');
+    p.classList.toggle('activ');
+    console.log('yeah man');
+});
 
 for (var i = 0; i < btn.length; i++){
     btn[i].addEventListener('click', function(){
