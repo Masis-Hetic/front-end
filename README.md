@@ -1,6 +1,8 @@
 # Front-End
 My tricks as front-end developper
 
+1. Télécharger tout les fichiers, ou seulement ceux de votre choix
+
 # Slider - how to use ? 
 Pure Javascript slider / Carousel
 
