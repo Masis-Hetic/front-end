@@ -98,6 +98,14 @@ div.content p{
     line-height: 1.7;
 }
 
+@media screen and (max-width: 600px) {
+	div.content h2{
+		margin: 10px 0 40px 5%;
+	}
+	div.content p{
+		width: 90%; 
+	}
+}
 
 
 
